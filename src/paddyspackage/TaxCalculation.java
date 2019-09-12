@@ -19,11 +19,12 @@ Integer income = Integer.parseInt(JOptionPane.showInputDialog("Enter your Income
        tax = 0.2;
    }
 
-   else {
+   else if(income>36000){
        tax = 0.41;
    }
-
-JOptionPane.showMessageDialog(null,name+"\n"+"Tax due: "+income*tax+" EUR");
+else {JOptionPane.showMessageDialog(null,"false Income entered");
+System.exit(0);}
+JOptionPane.showMessageDialog(null,name+"\n"+"Tax due: "+String.format("%.2f",income*tax)+" EUR");
 
     }
 }
