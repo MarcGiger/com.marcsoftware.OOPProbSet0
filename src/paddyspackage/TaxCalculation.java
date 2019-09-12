@@ -24,6 +24,7 @@ Integer income = Integer.parseInt(JOptionPane.showInputDialog("Enter your Income
    }
 else {JOptionPane.showMessageDialog(null,"false Income entered");
 System.exit(0);}
+
 JOptionPane.showMessageDialog(null,name+"\n"+"Tax due: "+String.format("%.2f",income*tax)+" EUR");
 
     }
