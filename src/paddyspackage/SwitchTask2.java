@@ -4,30 +4,34 @@ import javax.swing.*;
 
 import static javax.swing.JOptionPane.showInputDialog;
 
-public class SwitchTask {
+public class SwitchTask2 {
     public static void main(String[] args) {
 
-        String letter = showInputDialog("enter Char A, D, M, S").toUpperCase();
+          String letter = showInputDialog("enter Char A, D, M, S").toUpperCase();
         char ch= letter.charAt(0);
 
-        Integer num1 = Integer.parseInt(showInputDialog("Enter Value 1"));
-        Integer num2 = Integer.parseInt(showInputDialog("Enter Value 2"));
+        float result = Integer.parseInt(showInputDialog("Enter Value 1"));
+        float num2 = Integer.parseInt(showInputDialog("Enter Value 2"));
 
-float result = 0;
+        while(ch!='q'){
+
+
+        }
+
 
 switch(ch){
             case 'A':
             case 'a':
-                result = num1+num2;
+                result = result+num2;
                 break;
             case 'D':
-                result = num1/num2;
+                result = result/num2;
                 break;
             case 'M':
-                result = num1*num2;
+                result = result*num2;
                 break;
             case 'S':
-                result = num1-num2;
+                result = result-num2;
                 break;
 
             default:
@@ -36,6 +40,8 @@ switch(ch){
         }
 
 JOptionPane.showMessageDialog(null,"The result is: "+String.format("%.3f",result));
+
+
 
     }
 }
